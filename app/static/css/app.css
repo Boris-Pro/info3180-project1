@@ -1,3 +1,45 @@
 body {
     padding-top: 5rem;
 }
+
+.form-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.property-display{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+.form-label {
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 20px; /* Add padding between each row */
+}
+
+.price {
+    background-color: blue;
+    color: white;
+    width: 100px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.type {
+    background-color: rgb(241, 216, 25);
+    color: white;
+    width: 100px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.view-details {
+    width: 100%;
+}
+
+.property-image {
+    height: 300px;
+}

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block main %}
+    <div class="card">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <img src="{{ property.image_url }}" class="card-img property-image" alt="{{ property.property_title }}">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h1 class="card-title">{{ property.property_title }}</h1>
+                    <div class="property-display">
+                    <p class="card-text price">${{ property.price }}</p>
+                    <p class="card-text type">{{ property.property_type }}</p>
+                    </div>
+                    <p class="card-text"> {{ property.description }}</p>
+                    <div class="property-display">
+                    <p class="card-text"> <i class="fas fa-bed"></i> {{ property.no_of_rooms }} Bedrooms</p>
+                    <p class="card-text"> <i class="fas fa-shower"></i> {{ property.no_of_bathrooms }} Bathrooms</p>
+                    </div>
+                    <p class="card-text"> <i class="fas fa-map-marker-alt"></i> {{ property.location }}</p>
+                    <a href="#" class="btn btn-primary">Email Realtor</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
